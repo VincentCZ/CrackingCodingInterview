@@ -36,7 +36,7 @@ public class MyTools {
 		return s1.indexOf(s2) > -1;
 	}
 	
-	public static void printLinkedListNode(LinkedListNode n) {
+	public static void printLinkedList(LinkedListNode n) {
 		int i = 0;
 		
 		while(n != null) {
@@ -44,6 +44,28 @@ public class MyTools {
 //			System.out.println(n);
 			n = n.next;
 		}				
+	}
+	
+	public static LinkedListNode createLinkList(Object[] object) {
+		LinkedListNode head = new LinkedListNode(null);
+		LinkedListNode current = head;
+
+		for(int i = 0; i < object.length; i++) {
+			current.next = new LinkedListNode(object[i]);
+			current = current.next;
+		}
+		return head.next;		
+	}	
+	
+	public static LinkedListNode createLinkList(int[] integer) {
+		LinkedListNode head = new LinkedListNode(null);
+		LinkedListNode current = head;
+
+		for(int i = 0; i < integer.length; i++) {
+			current.next = new LinkedListNode(integer[i]);
+			current = current.next;
+		}
+		return head.next;		
 	}
 
 }
