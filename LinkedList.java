@@ -22,4 +22,22 @@ public class LinkedList {
 			n = n.next;
 		}
 	}
+	/*	without buffer	 */
+	public static void deleteDups2(LinkedListNode head) {
+		if (head == null) return;
+		
+		LinkedListNode current = head;
+		while (current != null) {
+			LinkedListNode runner = current;
+			while(runner.next != null) {
+				if (runner.next.object == current.object) {
+					runner.next = runner.next.next;
+				} else {
+					runner = runner.next;
+				}
+			}
+			current = current.next;
+		}
+	}
+	
 }
