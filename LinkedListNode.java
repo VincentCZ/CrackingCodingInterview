@@ -21,10 +21,6 @@ public class LinkedListNode {
 		this.object = object;
 	}
 	
-	public LinkedListNode(LinkedListNode node, int k, IntWrapper i) {
-		
-	}
-	
 	public void remove() 
 	{
 		previous.next = next;
