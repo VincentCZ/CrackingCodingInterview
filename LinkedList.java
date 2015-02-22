@@ -9,13 +9,14 @@ public class LinkedList {
 	 * 		How would you solve this problem if a temporary buffer is not allowed?
 	 */	
 	public static void deleteDups(LinkedListNode n) {
-		Hashtable<String, Boolean> table = new Hashtable<String, Boolean>();
+		Hashtable<Object, Boolean> table = new Hashtable<Object, Boolean>();
 		LinkedListNode previous = null;
+		
 		while(n != null) {
 			if (table.containsKey(n.object)) {
 				previous.next = n.next;
 			} else {
-				table.put(String.valueOf(n.object),true);
+				table.put(n.object,true);
 				previous = n;
 			}
 			n = n.next;
