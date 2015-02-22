@@ -36,5 +36,14 @@ public class MyTools {
 		return s1.indexOf(s2) > -1;
 	}
 	
+	public static void printLinkedListNode(LinkedListNode n) {
+		int i = 0;
+		
+		while(n != null) {
+			System.out.println("Node " + String.valueOf(++i) + ": " + n.toString());
+//			System.out.println(n);
+			n = n.next;
+		}				
+	}
 
 }
