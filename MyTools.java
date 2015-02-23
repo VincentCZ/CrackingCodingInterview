@@ -47,25 +47,25 @@ public class MyTools {
 	}
 	
 	public static LinkedListNode createLinkList(Object[] object) {
-		LinkedListNode head = new LinkedListNode(null);
+		LinkedListNode head = new LinkedListNode(object[0]);
 		LinkedListNode current = head;
 
-		for(int i = 0; i < object.length; i++) {
+		for(int i = 1; i < object.length; i++) {
 			current.next = new LinkedListNode(object[i]);
 			current = current.next;
 		}
-		return head.next;		
+		return head;		
 	}	
 	
 	public static LinkedListNode createLinkList(int[] integer) {
-		LinkedListNode head = new LinkedListNode(null);
+		LinkedListNode head = new LinkedListNode(integer[0]);
 		LinkedListNode current = head;
-
-		for(int i = 0; i < integer.length; i++) {
+		
+		for(int i = 1; i < integer.length; i++) {
 			current.next = new LinkedListNode(integer[i]);
 			current = current.next;
 		}
-		return head.next;		
+		return head;		
 	}
 
 }
