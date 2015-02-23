@@ -1,6 +1,8 @@
 
 import java.util.Hashtable;
 
+import LinkedList.LinkedListNode;
+
 public class LinkedLists {
 	
 	/* 
@@ -43,7 +45,7 @@ public class LinkedLists {
 	 * 	2.2 Implement an algorithm to find the kth to last element of
 	 * 	 a singly linked list.
 	 */
-	/*Approach A: Don't Return the Element*/
+	/*	Approach A:	Don't Return the Element	*/
 	public static int nthToLast(LinkedListNode head, int k) {
 		if (head == null) {
 			return 0;
@@ -54,7 +56,7 @@ public class LinkedLists {
 		}
 		return i;
 	}
-	/*Approach C: Create a Wrapper Class*/	
+	/*	Approach C:	Create a Wrapper Class	*/	
 	public static LinkedListNode nthToLastR2(LinkedListNode head, int k, IntWrapper i) {
 		if (head == null) {
 			return null;
@@ -66,7 +68,7 @@ public class LinkedLists {
 		}
 		return node;
 	}
-	
+	/*	2.3	solutions 3	*/
 	public static LinkedListNode nthToLastR3(LinkedListNode head, int k) {
 		if (k <= 0) return null;
 		
