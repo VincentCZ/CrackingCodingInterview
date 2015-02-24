@@ -6,19 +6,19 @@ package LinkedList;
 public class LinkedListNode {
 	public LinkedListNode previous;
 	public LinkedListNode next;
-	public Object object;
+	public int data;
 	public long timestamp;
 	
-	public LinkedListNode(Object object, LinkedListNode next, LinkedListNode previous)
+	public LinkedListNode(int data, LinkedListNode next, LinkedListNode previous)
 	{
-		this.object = object;
+		this.data = data;
 		this.next = next;
 		this.previous = previous;
 	}
 	
-	public LinkedListNode(Object object)
+	public LinkedListNode(int data)
 	{
-		this.object = object;
+		this.data = data;
 	}
 	
 	public void remove() 
@@ -29,7 +29,7 @@ public class LinkedListNode {
 	
 	public String toString() 
 	{
-		return object.toString();
+		return String.valueOf(data);
 	}
 	
 }
