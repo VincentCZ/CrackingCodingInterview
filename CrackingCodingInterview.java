@@ -1,4 +1,5 @@
 
+import ChapterII.*;
 import LinkedList.*;
 
 public class CrackingCodingInterview {
@@ -68,7 +69,7 @@ public class CrackingCodingInterview {
 //		System.out.print(" ");
 //		System.out.println(LinkedLists.nthToLastR3(n2, k).object);
 
-		/*	test type LinkedList	*/
+//		/*	test type LinkedList	*/
 //		int[] i3 = {10, 20, 30, 40};
 //		LinkedList l3 = new LinkedList(i3);
 //
@@ -76,9 +77,20 @@ public class CrackingCodingInterview {
 //		System.out.println(l3.mid);
 //		System.out.println(l3);
 
-		LinkedListNode n4 = LinkedList.create(Matrix.Arrays.random(new int[10],10));
-		LinkedList.print(n4);
-		LinkedListNode l4 = LinkedLists.partition2(n4, 4);
-		LinkedList.print(l4);
+//		LinkedListNode n4 = LinkedList.create(Matrix.Arrays.random(new int[10],10));
+//		LinkedList.print(n4);
+//		LinkedListNode l4 = Codes2_4.partition2(n4, 4);
+//		LinkedList.print(l4);
+		
+		LinkedListNode a5 = LinkedList.create(Matrix.Arrays.random(new int[4],10));
+		LinkedListNode b5 = LinkedList.create(Matrix.Arrays.random(new int[3],10));
+		LinkedListNode sum5 = Codes2_5.addLists2(a5, b5);
+		LinkedList.print(a5);
+		LinkedList.print(b5);
+		LinkedList.print(sum5);
+		
+		
 	}
+	
+	
 }
