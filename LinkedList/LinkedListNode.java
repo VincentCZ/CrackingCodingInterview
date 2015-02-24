@@ -20,6 +20,11 @@ public class LinkedListNode {
 	{
 		this.data = data;
 	}
+
+	public void setNext(LinkedListNode more) {
+		// TODO Auto-generated method stub
+		this.next = more;
+	}
 	
 	public void remove() 
 	{
@@ -31,5 +36,5 @@ public class LinkedListNode {
 	{
 		return String.valueOf(data);
 	}
-	
+
 }

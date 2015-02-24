@@ -6,13 +6,15 @@ public class LinkedList {
 	
 	public static void print(LinkedListNode n) {
 
-		System.out.print("N01:");
+		System.out.print("List:");
 		while(n != null) {
 			System.out.print(String.format("%3d", n.data));
-			System.out.print("->");
+			if (n.next != null) {
+				System.out.print("->");
+			}
 			n = n.next;	
 		}
-		System.out.println(" " + n);
+		System.out.println();
 	}
 	
 	public static LinkedListNode create(int[] integer) {
@@ -98,10 +100,10 @@ public class LinkedList {
 		LinkedListNode node = this.head;
 		String str = "" + this.head;
 		while(node.next != null) {
-			str += " -> " + node.next;
+			str += "-> " + String.format("%3s", node.next);
 			node = node.next;
 		}
-		return str + " -> " + node.next;
+		return str;
 	}
 	
 }
