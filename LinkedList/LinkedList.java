@@ -3,56 +3,14 @@ package LinkedList;
 public class LinkedList {
 	public LinkedListNode head;
 	public LinkedListNode mid;
-	
-	public static void print(LinkedListNode n) {
 
-		System.out.print("List:");
-		while(n != null) {
-			System.out.print(String.format("%3d", n.data));
-			if (n.next != null) {
-				System.out.print("->");
-			}
-			n = n.next;	
-		}
-		System.out.println();
-	}
-	
-	public static LinkedListNode create(int[] integer) {
-		LinkedListNode head = new LinkedListNode(integer[0]);
-		LinkedListNode current = head;
+	public LinkedList() {
 		
-		for(int i = 1; i < integer.length; i++) {
-			current.next = new LinkedListNode(integer[i]);
-			current = current.next;
-		}
-		return head;		
 	}
 	
-	public static LinkedListNode find(LinkedListNode head, int nodePoint) {
-		LinkedListNode find = head;
-		if(nodePoint < 1 || head == null) return null;
-		for(int i = 1; i < nodePoint; i++) {
-			if(find == null) return null;
-			find = find.next;
-		}
-		return find;
-	}
-
 	public LinkedList(LinkedListNode node) {
 		this.head = node;
 	}
-	
-//	public LinkedList(Object[] object) {
-//		this.head = new LinkedListNode(object[0]);
-//		LinkedListNode current = this.head;
-//		
-//		int count = 1;
-//		while(object[count] != null) {
-//			current.next = new LinkedListNode(object[count]);
-//			current = current.next;
-//			count++;
-//		}
-//	}
 
 	public LinkedList(int[] object) {
 		this.head = new LinkedListNode(object[0]);
@@ -105,5 +63,40 @@ public class LinkedList {
 		}
 		return str;
 	}
+	
+	public static void print(LinkedListNode n) {
+
+		System.out.print("List:");
+		while(n != null) {
+			System.out.print(String.format("%3d", n.data));
+			if (n.next != null) {
+				System.out.print("->");
+			}
+			n = n.next;	
+		}
+		System.out.println();
+	}
+	
+//	public static LinkedListNode find(LinkedListNode head, int nodePoint) {
+//		LinkedListNode find = head;
+//		if(nodePoint < 1 || head == null) return null;
+//		for(int i = 1; i < nodePoint; i++) {
+//			if(find == null) return null;
+//			find = find.next;
+//		}
+//		return find;
+//	}
+	
+//	public LinkedList(Object[] object) {
+//		this.head = new LinkedListNode(object[0]);
+//		LinkedListNode current = this.head;
+//		
+//		int count = 1;
+//		while(object[count] != null) {
+//			current.next = new LinkedListNode(object[count]);
+//			current = current.next;
+//			count++;
+//		}
+//	}
 	
 }

@@ -7,8 +7,7 @@ public class CrackingCodingInterview {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		ArraysStrings();
-		LinkedLists();
-		
+		LinkedLists();		
 	}
 	
 	public static void ArraysStrings() {
@@ -39,55 +38,52 @@ public class CrackingCodingInterview {
 //		Matrix.print(matrix6);
 //		ArraysStrings.rotate(matrix6,matrix6.length);
 //		Matrix.print(matrix6);
-		
-		
+				
 //		String s1 = "HelloWorldJava";
 ////		String s2 = "WorldJavaHello";
 //		String s3 = "JavaWorldHello";
 //		System.out.println(ArraysStrings.isRotation(s1, s3));
 		
-
 	}
 
 	public static void LinkedLists() {
 		
 		System.out.println("Chapter II Linked Lists");
 		
-//		int[] c1 = {1, 2, 2, 3, 3, 4, 5, 6, 6, 3, 3};
-//		LinkedListNode n1 = LinkedList.create(c1);		
-//		
-//		LinkedList.print(n1);
-//		Codes2_1.deleteDups2(n1);
-//		LinkedList.print(n1);
+//		int[] c1 = {1, 2, 2, 3, 3, 4, 5, 6, 6, 3, 3};		
+//		LinkedList n1 = new LinkedList(c1);
+//		System.out.println(n1);
+//		Codes2_1.deleteDups2(n1.head);
+//		System.out.println(n1);
 
 //		int[] c2 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-//		LinkedListNode n2 = LinkedList.create(c2);
-//
+//		LinkedList n2 = new LinkedList(c2);
 //		IntWrapper i = new IntWrapper();
-//		int k = 2;
-//		System.out.print(Codes2_2.nthToLastR2(n2, k, i).data);
-//		System.out.print(" ");
-//		System.out.println(Codes2_2.nthToLastR3(n2, k).data);
+//		int k = 3;
+//		System.out.print(Codes2_2.nthToLastR2(n2.head, k, i).data);
+//		System.out.print(String.format("%8s",""));
+//		System.out.println(Codes2_2.nthToLastR3(n2.head, k).data);
 
-//		/*	test type LinkedList	*/
+		/*	test type LinkedList	*/
 //		int[] i3 = {10, 20, 30, 40};
 //		LinkedList l3 = new LinkedList(i3);
-//
-//		System.out.println(l3.delete(2));
-//		System.out.println(l3.mid);
+//		Codes2_3.deleteNode(l3.head);
 //		System.out.println(l3);
 
 //		LinkedListNode n4 = LinkedList.create(Matrix.Arrays.random(new int[10],10));
-//		LinkedList.print(n4);
-//		LinkedListNode l4 = Codes2_4.partition2(n4, 4);
-//		LinkedList.print(l4);
-		
-//		LinkedListNode a5 = LinkedList.create(Matrix.Arrays.random(new int[4],10));
-//		LinkedListNode b5 = LinkedList.create(Matrix.Arrays.random(new int[3],10));
-//		LinkedListNode sum5 = Codes2_5.addLists2(a5, b5);
-//		LinkedList.print(a5);
-//		LinkedList.print(b5);
-//		LinkedList.print(sum5);
+//		LinkedList n4 = new LinkedList(Matrix.Arrays.random(new int[10],10));
+//		System.out.println(n4);
+//		LinkedList l4 = null;
+//		l4.head = Codes2_4.partition(n4.head, 4);
+//		System.out.println(l4);
+
+//		LinkedList a5 = new LinkedList(Matrix.Arrays.random(new int[4],10));
+//		LinkedList b5 = new LinkedList(Matrix.Arrays.random(new int[3],10));
+//		LinkedList sum5 = new LinkedList();
+//		sum5.head = Codes2_5.addLists2(a5.head, b5.head);
+//		System.out.println(a5);
+//		System.out.println(b5);
+//		System.out.println(sum5);
 		
 		int[] i6 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 		LoopLinkedList lh6 = new LoopLinkedList(i6, 5);
