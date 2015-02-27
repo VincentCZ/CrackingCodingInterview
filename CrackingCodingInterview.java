@@ -15,7 +15,7 @@ public class CrackingCodingInterview {
 		System.out.println("Chapter I ArraysStrings & String completed");
 		
 //		String str = "abcdefg";
-//		System.out.println(ArraysStrings.isUniqueChars2(str));
+//		System.out.println(Codes1_1.isUniqueChars2(str));
 //		
 //		String s3 = "God";
 //		String t3 = "dog";
@@ -85,11 +85,16 @@ public class CrackingCodingInterview {
 //		System.out.println(b5);
 //		System.out.println(sum5);
 		
-		int[] i6 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-		LoopLinkedList lh6 = new LoopLinkedList(i6, 5);
-		System.out.println(lh6.head + " -> " + "<n" + lh6.loopNode + ">" + lh6.loopHead);
-		System.out.println(Codes2_6.FindBeginning(lh6.head)); 
-		System.out.println(lh6);
+//		int[] i6 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+//		LoopLinkedList lh6 = new LoopLinkedList(i6, 5);
+//		System.out.println(lh6.head + " -> " + "<n" + lh6.loopNode + ">" + lh6.loopHead);
+//		System.out.println(Codes2_6.FindBeginning(lh6.head)); 
+//		System.out.println(lh6);
+		
+		int[] i7 = {1,2,3,4,3,2,1,0};
+		LinkedList l7 = new LinkedList(i7);
+		System.out.println(Codes2_7.isPalindrome(l7.head));
+		
 	}
 	
 	
