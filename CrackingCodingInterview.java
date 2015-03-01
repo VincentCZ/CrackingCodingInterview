@@ -1,13 +1,14 @@
 
-import ChapterII.*;
-import LinkedList.*;
+import Chapter3.*;
+//import LinkedList.*;
 
 public class CrackingCodingInterview {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		ArraysStrings();
-		LinkedLists();		
+		LinkedLists();
+		StacksQueues();
 	}
 	
 	public static void ArraysStrings() {
@@ -48,7 +49,7 @@ public class CrackingCodingInterview {
 
 	public static void LinkedLists() {
 		
-		System.out.println("Chapter II Linked Lists");
+		System.out.println("Chapter II Linked Lists completed");
 		
 //		int[] c1 = {1, 2, 2, 3, 3, 4, 5, 6, 6, 3, 3};		
 //		LinkedList n1 = new LinkedList(c1);
@@ -91,11 +92,14 @@ public class CrackingCodingInterview {
 //		System.out.println(Codes2_6.FindBeginning(lh6.head)); 
 //		System.out.println(lh6);
 		
-		int[] i7 = {1,2,3,4,3,2,1,0};
-		LinkedList l7 = new LinkedList(i7);
-		System.out.println(Codes2_7.isPalindrome(l7.head));
+//		int[] i7 = {1,2,3,4,3,2,1,0};
+//		LinkedList l7 = new LinkedList(i7);
+//		System.out.println(Codes2_7.isPalindrome(l7.head));
 		
 	}
 	
+	public static void StacksQueues() {
+		
+	}
 	
 }
